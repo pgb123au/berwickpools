@@ -1,0 +1,204 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Pool Equipment Install & Replacement",
+  "serviceType": "Swimming pool pump, filter, heater, chlorinator and automation supply and install",
+  "provider": {
+    "@type": "GeneralContractor",
+    "name": "Berwick Pools",
+    "telephone": "+61390030108"
+  },
+  "areaServed": [
+    { "@type": "AdministrativeArea", "name": "City of Casey" },
+    { "@type": "City", "name": "Berwick" },
+    { "@type": "City", "name": "Cranbourne" },
+    { "@type": "City", "name": "Narre Warren" },
+    { "@type": "City", "name": "Hampton Park" },
+    { "@type": "City", "name": "Endeavour Hills" }
+  ],
+  "description": "Pool equipment install, swap and upgrade for existing Casey pools. Variable-speed pumps, cartridge and media filters, heat pumps, salt and mineral chlorinators, automation, robotic cleaners. Manufacturer-independent — we install what suits your pool.",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "AUD",
+    "priceRange": "$1,500-$8,000",
+    "description": "Equipment swaps starting from $1.5K for a basic pump replacement up to $8K for a heat pump install on an existing pool."
+  }
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does it cost to replace a pool pump?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Standard pool pump swap ranges $1,500-$2,800 supplied and installed. The pump itself is $700-$1,800 depending on brand and size (Astralpool, Pentair, Davey, Onga); install labour, plumbing and electrical reconnection is $500-$800. The big saving is going from a single-speed pump to a variable-speed pump (VSD) — a VSD running at low speed 18 hours a day uses about a quarter of the electricity of a single-speed running 8 hours, saving $700-$1,000/year. The VSD pays for itself in 18 months and runs whisper-quiet at low speed." }
+    },
+    {
+      "@type": "Question",
+      "name": "Which is better — cartridge filter or sand filter?",
+      "acceptedAnswer": { "@type": "Answer", "text": "For a typical Casey pool: cartridge filter. Filters finer particles (10-15 micron vs 30-40 micron for sand), uses no water for backwashing (sand filters waste 200-400L every backwash cycle), and the cartridges last 2-4 years before replacement. Sand filters are cheaper upfront ($600 vs $1,400) but the water waste and weaker filtration cost more long-term. The exception is very heavily used pools (commercial or extra-large family pools) where sand handles the volume better. We recommend cartridge for 90% of City of Casey domestic pools." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a heat pump worth it in Berwick?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, for most owners. A 13-21kW heat pump extends a standard 8m × 4m pool's swim season from December-March to September-May — six months of usable swimming instead of three. Running cost in Casey climate: about $40-$80/week to hold 26-28°C through autumn and spring. Install cost: $4,000-$6,500 including new circuit breaker and concrete slab. Combined with a thermal blanket (essential — halves running cost), most owners get usable year-round swimming for sensible money. Plunge pools get even better value from a heat pump — smaller volume means cheaper running." }
+    },
+    {
+      "@type": "Question",
+      "name": "Salt water, mineral or chlorine system — which is right?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Salt water chlorinators are the Australian default — the system generates chlorine on-demand from low-concentration salt water (about 3,500-5,000 ppm, less salty than tears). Pros: lower ongoing chemical cost, gentler on skin and eyes than dosed chlorine, no chlorine handling. Cons: salt cell needs replacement every 5-7 years ($800-$1,400). Mineral systems (Naked, Magnapool) use magnesium and potassium instead of pure sodium chloride — kindest on skin and plants, slightly higher upfront cost. Pure chlorine dosing pumps are cheapest to install but you handle chlorine constantly. For young families: mineral. For everyone else: salt." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you add pool automation to an existing pool?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Modern pool automation (Astralpool Connect 10, Pentair IntelliCenter, Davey ChloroMatic) controls pump, chlorinator, heater, lights and a robot from a phone app. Retrofit install on an existing pool typically $2,500-$4,500 depending on how much existing equipment is compatible. Some old single-speed pumps and basic chlorinators need replacement to support automation — we'll tell you upfront which existing pieces are usable. The result: pool that auto-runs to your schedule, alerts you if a problem develops, lets you turn the spa or heating on from work before you get home." }
+    },
+    {
+      "@type": "Question",
+      "name": "How often does pool equipment need to be replaced?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Typical service lives in Casey climate: pumps 8-12 years (single-speed), 10-15 years (variable-speed); cartridge filters 15-20 years on the housing, 2-4 years per cartridge; sand filters 12-18 years; salt chlorinator power packs 8-12 years, salt cells 5-7 years; heat pumps 10-15 years; robotic cleaners 5-8 years depending on use. Keep equipment under cover (a small equipment shed extends life by 30-50%) and run a variable-speed pump on low rather than thrashing a single-speed pump." }
+    }
+  ]
+};
+---
+<Layout
+  title="Pool Equipment Berwick | Pumps, Filters, Heat Pumps, Chlorinators | (03) 9003 0108"
+  description="Pool equipment install and replacement for Berwick, Cranbourne, Narre Warren, Hampton Park, Endeavour Hills. Variable-speed pumps, cartridge filters, heat pumps, salt and mineral chlorinators, automation. $1.5K-$8K typical. Manufacturer-independent."
+  canonical="https://berwickpools.com.au/services/pool-equipment/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Upgrade what makes your pool run</span>
+      <h1>Pool equipment install &amp; replace in <span class="accent">Berwick &amp; the City of Casey</span>.</h1>
+      <p class="hero-sub">
+        Variable-speed pumps, cartridge filters, heat pumps, salt and mineral
+        chlorinators, automation, robotic cleaners. Install on new builds, swap
+        on existing pools, or upgrade old single-speed equipment that&rsquo;s
+        costing you in power and chemicals. We&rsquo;re manufacturer-independent
+        and tell you the truth about which gear actually performs.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book a free assessment</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Pool equipment we install.</h2>
+      <div style="max-width: 65rem;">
+        <h3>Variable-speed pumps ($1,500&ndash;$2,800 installed).</h3>
+        <p>
+          The single best equipment upgrade for any existing pool. A variable-speed
+          (VSD) pump running on low speed 18 hours a day uses about a quarter of
+          the electricity of an old single-speed pump running 8 hours, while
+          delivering better filtration. Annual saving: $700&ndash;$1,000.
+          Payback: ~18 months. We install Astralpool, Pentair, Davey and Onga
+          VSDs &mdash; brand-agnostic, we&rsquo;ll recommend based on your existing
+          plumbing and pool size.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Filters &mdash; cartridge vs media ($1,200&ndash;$2,400 installed).</h3>
+        <p>
+          <strong>Cartridge filters</strong> filter 10&ndash;15 micron, waste no
+          water on backwashing, replace cartridges every 2&ndash;4 years. The
+          right answer for 90% of Casey pools.
+          <strong>Sand or glass-media filters</strong> filter 30&ndash;40 micron,
+          backwash to a drain (200&ndash;400L per cycle), media lasts 5&ndash;7
+          years. Cheaper upfront but the water waste accumulates. Best for very
+          high-use pools (10+ swimmers daily).
+        </p>
+
+        <h3 style="margin-top: 2rem;">Heat pumps ($4,000&ndash;$6,500 installed).</h3>
+        <p>
+          Extends a standard Berwick or Cranbourne pool&rsquo;s swim season from
+          three months (Dec&ndash;Mar) to six months (Sep&ndash;May). Running cost
+          $40&ndash;$80/week to hold 26&ndash;28&deg;C in shoulder seasons, much
+          lower with a thermal blanket. We install Madimack, Astralpool,
+          Evoheat and Pentair heat pumps. Sizing matters &mdash; a 13kW unit
+          suits a 6&ndash;8m pool; a 17&ndash;21kW unit for a 9&ndash;10m pool;
+          a 9kW unit for plunge pools. Install includes a dedicated circuit
+          breaker and a concrete equipment slab.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Salt chlorinators &amp; mineral systems ($1,400&ndash;$2,800 installed).</h3>
+        <p>
+          <strong>Salt chlorinators</strong> are the Aussie default &mdash; cell
+          generates chlorine on demand from 3,500&ndash;5,000 ppm salt water.
+          We install Astralpool VX series, Davey ChloroMatic, Pentair IntelliChlor.
+          Cell life 5&ndash;7 years in Casey climate.
+          <strong>Mineral systems</strong> (Naked Pools, Magnapool, Aquatherepe)
+          use magnesium and potassium &mdash; kinder on skin, kinder on plants
+          near the pool. Slightly higher upfront but lower ongoing skin-irritation
+          risk for families with sensitive kids.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Automation ($2,500&ndash;$4,500 retrofitted).</h3>
+        <p>
+          Astralpool Connect 10, Pentair IntelliCenter, Davey ChloroMatic
+          smart controllers. Phone-app control of pump speed, chlorinator
+          output, heater, lights and a robotic cleaner. Schedule the pool to
+          run when off-peak power is cheap, get alerts if water level drops
+          (leak warning), turn the heater on from work. Retrofittable to most
+          existing pools &mdash; sometimes needs a pump or chlorinator upgrade
+          to be fully compatible. We assess what&rsquo;s reusable at the site
+          visit.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Robotic cleaners ($1,800&ndash;$3,800).</h3>
+        <p>
+          Maytronics Dolphin (M400, M500, M600), Hayward TigerShark, Pentair
+          Prowler. Independent of the pool&rsquo;s plumbing &mdash; plug into a
+          dedicated robot circuit, drop in, it does the floor and walls in
+          2&ndash;3 hours. Worth more than a manual vacuum or a suction-side
+          cleaner if you value your weekends.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Plumbing &amp; controls upgrades.</h3>
+        <p>
+          Sometimes the equipment is fine but the surrounding pipework is the
+          bottleneck &mdash; old 40mm rigid PVC instead of 50mm, undersized
+          unions cracking under VSD vibration, missing isolation valves making
+          servicing painful. We assess and upgrade where it makes sense. New
+          equipment slab if the old one is cracked or undersized: $1,200&ndash;$2,500.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/berwick/">Berwick</a>
+        <a class="area-pill" href="/cranbourne/">Cranbourne</a>
+        <a class="area-pill" href="/narre-warren/">Narre Warren</a>
+        <a class="area-pill" href="/hampton-park/">Hampton Park</a>
+        <a class="area-pill" href="/endeavour-hills/">Endeavour Hills</a>
+        <a class="area-pill" href="/city-of-casey/">All City of Casey</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free pool equipment assessment.</h2>
+        <p>Honest swap-or-keep advice. We&rsquo;ll show you the power-bill math.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Quote online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

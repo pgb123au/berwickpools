@@ -1,0 +1,138 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Are Hampton Park blocks bigger than other Casey suburbs?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, generally. Hampton Park has a higher proportion of 700-1,200m² blocks than Cranbourne or Narre Warren, and there's a rural-residential fringe along Hallam South Road, Linsell Boulevard and the Hampton Park – Endeavour Hills border where blocks run 1,500m²-3,000m². The larger blocks give more design freedom — owners can fit a 9-10m concrete pool, alfresco, garden bed and lawn without anything feeling squeezed." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the soil class in Hampton Park?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Mostly Class M (moderately reactive) clay, with patches of Class H1 in the older 1970s sections around Stuart Avenue and Coleman Road where the clay layer is deeper. The rural-residential fringe can have Class H2 or even Class E (extreme) in low-lying parts — we always organise a geotech report before quoting concrete on those blocks. Class H2/E adds about $2K-$5K to the engineering ($800 deeper piers, $1,500 extra reo, $1,500 for the structural engineer's certified design)." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you build a pool on the larger Hampton Park rural blocks?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — those are some of our favourite builds. The 1,500-3,000m² fringe blocks have space for a 10m+ pool, an alfresco pavilion, and proper pool landscaping. We do a lot of concrete pools here with feature walls, in-floor cleaning systems and integrated spas. Cost typically $80K-$130K all-in including paving, fence and landscaping. Build time 18-24 weeks. The rural setting also means less neighbour-noise concern for equipment placement." }
+    },
+    {
+      "@type": "Question",
+      "name": "How does AS 1926 fence compliance work on a sloping Hampton Park block?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Hampton Park has some sloping blocks (especially the southern fringe). AS 1926 measures the 1.2m minimum fence height from the high side of any climbable object within 900mm of the fence — so a retaining wall, garden bed or even a thick mulched edge within 900mm of the fence effectively raises the required fence height. On a slope, this often means we step the fence in horizontal panels rather than running a single sloped run. We design the fence to comply on the worst measurement point, not the easy one." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Hampton Park inside any flood overlays?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Small parts of southern Hampton Park near the Eumemmerring Creek catchment sit under the Land Subject to Inundation Overlay (LSIO). It rarely blocks a pool build but adds an engineering report requirement. Most of the suburb is overlay-free. We check the City of Casey planning map for every site visit." }
+    }
+  ]
+};
+---
+<Layout
+  title="Pool Builders Hampton Park | Larger Blocks, Custom Concrete | (03) 9003 0108"
+  description="Concrete and fibreglass pool builders for Hampton Park — larger Casey blocks, rural-residential fringe, custom concrete and entertaining-zone integration. AS 1926 fence compliance. Free on-site consultation."
+  canonical="https://berwickpools.com.au/hampton-park/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Hampton Park &middot; Casey south &middot; larger blocks</span>
+      <h1>Pool builders in <span class="accent">Hampton Park</span>.</h1>
+      <p class="hero-sub">
+        Hampton Park has the biggest backyards in our service area &mdash; mostly
+        700&ndash;1,200m&sup2; established blocks, with a rural-residential fringe
+        along Hallam South Road running 1,500&ndash;3,000m&sup2;. Plenty of room
+        for a proper concrete pool, a pavilion, garden landscaping and grass for
+        the dogs. These are some of the best blocks in Casey to build on.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book a free consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why Hampton Park</span>
+      <h2>The Hampton Park pool story.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>Block size unlocks custom concrete.</h3>
+        <p>
+          On a 600m&sup2; estate block, every metre matters and a fibreglass shell
+          is usually the right answer. On a Hampton Park <strong>900&ndash;1,500m&sup2;
+          block</strong>, you have space to build the pool that actually suits the
+          way you live &mdash; a 10m lap pool for serious swimmers, an L-shape with
+          built-in spa, a 9m freeform with a wet-edge feature wall. Concrete unlocks
+          those shapes. About 65% of our Hampton Park builds are concrete.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Reactive clay &mdash; check the class before you sign.</h3>
+        <p>
+          Hampton Park sits on the same Newer Volcanic clay as Berwick. The older
+          1970s sections around Stuart Avenue and Coleman Road have deeper Class M
+          to H1 clay layers; the rural-residential fringe can hit Class H2 or
+          Class E in low-lying spots. A <strong>geotech soil report</strong>
+          (about $700, ordered before we finalise engineering) tells us how deep
+          the piers go and whether we need to upsize the footings. We don&rsquo;t
+          quote concrete blind &mdash; that&rsquo;s how cheap builders end up with
+          a cracked shell.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Sloping blocks &mdash; design for the worst point.</h3>
+        <p>
+          Some Hampton Park blocks slope 1.5&ndash;3m across the back yard. We
+          design for the slope rather than fight it: step the pool down into the
+          slope with a fully engineered retaining wall behind the deep end, or
+          set the pool above ground with a paved deck around &mdash; depending
+          on the look you want and the budget. AS 1926 fencing on a slope needs
+          to step in horizontal panels rather than slope, and the 1.2m height is
+          measured from the high side of any retaining within 900mm.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Typical Hampton Park projects.</h3>
+        <ul>
+          <li>10m &times; 4m lap pool concrete + tiled coping + lap-lane markers, larger block ($85K&ndash;$110K)</li>
+          <li>9m L-shape concrete + integrated spa + feature stack-stone wall ($85K&ndash;$120K)</li>
+          <li>8m &times; 4m fibreglass + travertine + landscape integration, standard 800m&sup2; block ($55K&ndash;$70K)</li>
+          <li>Concrete plunge pool 5m + heat pump, rural-residential fringe ($38K&ndash;$50K)</li>
+          <li>Full renovation of 30-year-old fibreglass pool: re-gelcoat + new equipment + new fence ($22K&ndash;$32K)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Other Casey suburbs we cover.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/berwick/">Berwick</a>
+        <a class="area-pill" href="/cranbourne/">Cranbourne</a>
+        <a class="area-pill" href="/narre-warren/">Narre Warren</a>
+        <a class="area-pill" href="/endeavour-hills/">Endeavour Hills</a>
+        <a class="area-pill" href="/city-of-casey/">All City of Casey</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free Hampton Park pool consultation.</h2>
+        <p>Geotech-checked engineering. Custom concrete on larger blocks. AS 1926 done right.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

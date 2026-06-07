@@ -1,0 +1,138 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a pool cost in Cranbourne?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Cranbourne pricing tracks the Casey average: fibreglass $40K-$55K for an 8m × 4m installed with paving and fence, concrete $55K-$85K for the same footprint with tiled finish. Cranbourne East and Cranbourne North new-estate blocks are typically more accessible (better crane swing, looser soil) so install costs sit at the lower end of the range. Cranbourne West and Cranbourne Park have older blocks with established gardens and tighter access — sometimes a $3K-$6K access premium." }
+    },
+    {
+      "@type": "Question",
+      "name": "Are Cranbourne new-estate blocks easy to build pools on?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Generally yes. Cranbourne East, Cranbourne North and the newer Botanic Ridge / Marriott Waters developments are deliberately pool-friendly: 500-700m² blocks with 1.0-1.5m side returns, straight street frontages for crane access, and growth-corridor soil that's mostly Class M reactive clay (workable with standard piers). Fence design works easily off the rear boundary. The catch is the design-covenant overlay — most estates require approval of fence style, paving colour and equipment-screen design before you build." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you work around the design covenants in Cranbourne estates?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — we work in Botanic Ridge, Marriott Waters, The Avenue, Lochaven and Riverwalk regularly. Most covenants require glass or tubular aluminium fencing (not Colorbond), a specific paving palette, and equipment screened from street view. We build the design package to suit the covenant first time so there's no resubmit cycle. Owners' Corporation approval typically takes 2-3 weeks alongside the Council permit." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's a typical pool size for a Cranbourne block?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Most popular spec: 7-8m × 3.5-4m fibreglass shell, 1.2m shallow / 1.8m deep, with a 1.5m wet-edge paved bench at one end. That footprint fits comfortably on a 600m² block while leaving room for a 6m × 4m grassed area and a 4m × 4m alfresco. Bigger Cranbourne East acreage blocks (1,000m²+) can take a 9-10m concrete pool with a swim-out and integrated spa. We design to the block, not to a stock template." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the Cranbourne East floodplain affect pool builds?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Parts of Cranbourne East and South sit within the Settlement Drain / Cardinia Creek floodplain overlay. The overlay restricts ground-level changes that could redirect floodwater, which usually means pool excavation spoil must be carted off-site rather than dumped on the block. We check the planning overlay at the first site visit using City of Casey's online property map — if your block is overlaid, the engineering report needs a 1-in-100-year flood level statement, which is a $400-$600 add to the engineering fee but doesn't usually block the build." }
+    }
+  ]
+};
+---
+<Layout
+  title="Pool Builders Cranbourne | Casey Growth Corridor | (03) 9003 0108"
+  description="Concrete and fibreglass pool builders for Cranbourne, Cranbourne East, North, West and Park. Fast turnaround on new-estate blocks. AS 1926 fence compliance, design-covenant pre-approval. Free on-site consultation."
+  canonical="https://berwickpools.com.au/cranbourne/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Cranbourne &middot; East &middot; North &middot; West &middot; Park</span>
+      <h1>Pool builders in <span class="accent">Cranbourne</span>.</h1>
+      <p class="hero-sub">
+        Cranbourne is the Casey growth hub &mdash; thousands of new-estate blocks
+        going up across Cranbourne East, North, West and Park, plus established 70s
+        and 80s pockets near the racecourse. Fast permit timelines, decent access,
+        Class M soil and pool-friendly design covenants make it one of the best
+        suburbs in Casey to build in.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book a free consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why Cranbourne</span>
+      <h2>The Cranbourne pool story.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>Growth-corridor blocks built to take a pool.</h3>
+        <p>
+          Estate developers in Botanic Ridge, Marriott Waters, The Avenue,
+          Lochaven and Riverwalk plan with pools in mind &mdash; 600&ndash;700m&sup2;
+          blocks, 1.0&ndash;1.5m side returns clear of meter boxes, decent crane
+          swing from the front street. About <strong>60% of our Cranbourne builds
+          are fibreglass</strong> &mdash; an 8m × 4m shell craned in over the
+          house, plumbed up to a concrete equipment slab in the side run, then
+          paved with travertine or large-format porcelain. From handshake to
+          first swim, 9&ndash;12 weeks is realistic.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Design covenants: get it right first time.</h3>
+        <p>
+          Most Cranbourne estates have an Owners&rsquo; Corporation or developer
+          design covenant on top of the City of Casey building permit. Common
+          requirements: glass or black tubular aluminium fence (no Colorbond
+          pool fencing), neutral paving palette, equipment screened from the
+          street, no above-ground filter housings visible. We build the design
+          package to satisfy both the covenant and AS 1926 in one pass so there
+          is no resubmit cycle.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Flood overlays &mdash; check first.</h3>
+        <p>
+          Parts of Cranbourne East and Cranbourne South sit under the Settlement
+          Drain / Cardinia Creek floodplain overlay. It rarely blocks the build,
+          but it does mean excavation spoil has to leave the site and the
+          engineering report needs a 1-in-100-year flood level statement.
+          We check the City of Casey planning overlay map at the site visit and
+          factor it into the quote on day one.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Typical Cranbourne projects.</h3>
+        <ul>
+          <li>8m &times; 4m fibreglass + travertine + glass fence, Botanic Ridge ($48K&ndash;$60K)</li>
+          <li>7m &times; 3.5m fibreglass + porcelain + black tubular fence, Marriott Waters ($42K&ndash;$54K)</li>
+          <li>9m custom concrete with swim-out and tile waterline, Cranbourne East acreage ($75K&ndash;$95K)</li>
+          <li>4m plunge pool concrete with heat pump, Cranbourne Park townhouse ($35K&ndash;$45K)</li>
+          <li>Tired 1990s pool renovation: resurface + new equipment, established Cranbourne West ($14K&ndash;$22K)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Other Casey suburbs we cover.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/berwick/">Berwick</a>
+        <a class="area-pill" href="/narre-warren/">Narre Warren</a>
+        <a class="area-pill" href="/hampton-park/">Hampton Park</a>
+        <a class="area-pill" href="/endeavour-hills/">Endeavour Hills</a>
+        <a class="area-pill" href="/city-of-casey/">All City of Casey</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free Cranbourne pool consultation.</h2>
+        <p>Estate-covenant-compliant design. Fast permit pathway. Fixed quote in 7 days.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

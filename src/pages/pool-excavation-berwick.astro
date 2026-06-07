@@ -1,0 +1,214 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need a planning permit from Casey Council for a backyard pool?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A building permit is required for every pool over 300mm deep — that is universal. A separate planning permit is only required if the property sits in a Significant Landscape Overlay, Heritage Overlay, Bushfire Management Overlay, Vegetation Protection Overlay, or if the pool encroaches setback rules. About 15–20% of Berwick blocks are in an overlay that triggers a planning-permit requirement, mostly in older heritage parts and the rural-residential fringes. We check the overlay status using the Planning Property Report on the first site visit before lodging anything — adds two days, saves potential weeks of refusal." }
+    },
+    {
+      "@type": "Question",
+      "name": "How does neighbour notification actually work, and can a neighbour object?",
+      "acceptedAnswer": { "@type": "Answer", "text": "For most pool builds the only notification required is the Building Permit notice posted to the boundary, and notice given to adjoining owners under Section 84 of the Building Act 1993 only if your build affects their land — for example if excavation is within 1.5m of a shared boundary, or if you need to remove and reinstate a section of fence. A planning permit triggers a public notice period (typically 14 days) during which any party can object. Casey Council manages the process. The pre-build conversation we have with you is: identify the neighbours whose lives the build will touch (noise, dust, truck movements, fence access) and have a one-page heads-up letter delivered before the dig starts. It costs nothing and resolves 90% of friction." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much soil actually comes out, and where does it go?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A standard 8m × 4m pool with a 1.2–1.85m depth profile generates 55–75 cubic metres of spoil — that is 5 to 7 truck loads of an 11m³ tipper, or 8 to 10 loads of a 7m³ smaller tipper. On Casey reactive clay the spoil cannot go back as backfill (it would re-swell and lift the shell), so 100% of it leaves site. Clean clay goes to construction-fill recipients (often free or low-cost tipping); contaminated or rocky spoil goes to a licensed transfer station ($60–$90 per cubic metre). We organise the disposal and include it in the fixed quote — there is no ‘oh by the way the dump fees were more than expected’ variation from us." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the access-easement issue and why does it matter?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Many Berwick blocks — particularly the deeper rural-residential ones around the Berwick-Cranbourne border — have registered easements running across the backyard. Stormwater easements, sewer easements, electricity-supply easements, telecommunications easements. You cannot build over an easement and you cannot excavate within the protective zone without the asset-owner’s written consent. Yarra Valley Water (sewer), South East Water (water main) and South East Power (electricity) each have a build-over application process taking 3–8 weeks. We pull a title and a Section 32 Vendor’s Statement on the first visit, identify any easements, and either redesign the pool footprint to clear them or lodge the build-over application immediately. Discovering an easement halfway through excavation is the worst case." }
+    },
+    {
+      "@type": "Question",
+      "name": "Five-truck-and-excavator vs mini-excavator — which is right for my block?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It depends entirely on access. A standard 8-ton excavator with 5-truck tipper turnaround can dig and remove a pool-sized hole in 1–2 days — fast, efficient, and the cheapest option per cubic metre. It needs 3.5m of clear side-access width, a stable driveway, and room to turn. About 60% of Berwick blocks have that. For tighter blocks — older Endeavour Hills, narrow-frontage Hampton Park, anything with a single-car driveway and overhead wires — we use a 1.7-ton mini-excavator that fits through a 1.2m gate. Dig takes 4–6 days instead of 1–2, and the cost is $4,000–$8,000 higher because of the slower production rate. The alternative is removing fence panels, which is sometimes cheaper than the upgrade — we work that out at the site visit." }
+    }
+  ]
+};
+---
+<Layout
+  title="Pool Excavation Berwick — Casey Council, Easements, Soil Haul | Berwick Pools"
+  description="Pool excavation in Berwick — planning permits, building permits, neighbour notification, easement checks, soil-haul volumes, and the 8-ton vs mini-excavator choice. SPASA Victoria member."
+  canonical="https://berwickpools.com.au/pool-excavation-berwick/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">The week the project becomes real</span>
+      <h1>Pool excavation in Berwick — <span class="accent">what Council needs, what neighbours need, and how the dig actually works</span>.</h1>
+      <p class="hero-sub">
+        Excavation is the visible turning point of every pool build. This page walks
+        through the City of Casey pre-build process, the easement and overlay
+        checks, the soil-haul calculation for reactive Casey clay, and the
+        excavator decision that drives a third of the build cost.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book a site visit</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>The Casey Council pre-build process.</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          Every pool over 300mm deep needs a building permit from a registered
+          building surveyor, full stop. That is regulated under the Building Act
+          1993 and the Building Regulations 2018, not Casey Council directly —
+          Council is involved through the planning system and through the asset
+          owner role on stormwater and drainage. The order of operations matters
+          and the wrong sequence can add 4–6 weeks to a build.
+        </p>
+        <p>
+          Step one: pull the Planning Property Report from the State Government’s
+          Vicplan portal. This tells you the zone, every overlay that applies to
+          the block, and the bushfire and heritage status. Most of Berwick is
+          General Residential Zone with no special overlay — clean and quick.
+          Some pockets — heritage parts of Old Berwick, the rural-residential
+          fringes toward Beaconsfield Upper, and Bushfire Management Overlay
+          parcels in the hills — trigger a planning permit before the building
+          permit can be issued.
+        </p>
+        <p>
+          Step two: pull a current copy of title and the Section 32 Vendor’s
+          Statement. This is where registered easements show up. Stormwater
+          easements, sewer easements, electricity supply easements,
+          telecommunications easements. You cannot build over an easement without
+          the asset owner’s written consent, and excavation within the protective
+          zone (typically 1.0–1.5m from the centreline) requires the same
+          approval.
+        </p>
+        <p>
+          Step three: lodge the build-over applications if any easement is in
+          play. Yarra Valley Water (sewer), South East Water (water and
+          recycled-water mains), South East Power (electricity), and NBN
+          (telecommunications) each have their own process. Typical turnaround:
+          3–8 weeks. We lodge in week one so the approval lands before
+          excavation needs to start.
+        </p>
+        <p>
+          Step four: building surveyor lodges the building permit. Soil report,
+          structural engineering, AS 1926 pool fence design, AS 2783 excavation
+          design, and AS 1839 shotcrete shell design all need to be in the
+          submission. Standard turnaround 5–10 working days for a complete
+          submission.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Neighbour notification — formal and informal.</h3>
+        <p>
+          The formal notification is light. The Building Permit is publicly
+          noticed by being posted on the property boundary visible from the
+          street. Section 84 of the Building Act requires written notice to
+          adjoining property owners only if the construction will affect their
+          land — for example, excavation within 1.5m of a shared boundary, or
+          temporary removal of a shared fence. A planning permit (when required)
+          triggers a 14-day public notice period during which any party can
+          object.
+        </p>
+        <p>
+          The informal notification is where the relationship is actually built.
+          Two weeks before the dig, we recommend handing a one-page letter to
+          every direct neighbour: dates, hours, expected truck movements, the
+          name and mobile of our site supervisor, and a thank-you-in-advance for
+          their patience. Costs nothing, takes 30 minutes, and resolves
+          everything from disputes about parking to angry phone calls about
+          dust. We can draft this letter for you — we do it for most builds.
+        </p>
+
+        <h3 style="margin-top: 2rem;">The soil-haul calculation.</h3>
+        <p>
+          A standard 8m × 4m pool with a 1.2m shallow end and a 1.85m deep end
+          generates about 65 cubic metres of spoil, including the over-dig
+          allowance for piers and working clearance. On reactive Casey clay,
+          none of that spoil can go back into the hole as backfill — it would
+          re-swell and lift the shell. So 100% leaves site, in 5–7 loads of an
+          11m³ tipper truck or 8–10 loads of a 7m³ smaller tipper.
+        </p>
+        <p>
+          Where the spoil goes depends on what it is. Clean uncontaminated clay
+          is the easiest — local construction-fill projects often take it for
+          free or a small fee. Wet, rocky, or organic-laden spoil goes to a
+          licensed transfer station at $60–$90 per cubic metre. Spoil that has
+          tested above contamination thresholds (rare in Berwick but possible
+          near former industrial parcels) goes to a Category C cell at $140+
+          per cubic metre.
+        </p>
+        <p>
+          We include the disposal in the fixed quote — based on a clay-haul
+          assumption confirmed by the soil report. If contamination shows up
+          during the dig that we could not have anticipated, that becomes a
+          variation; otherwise the haul cost is locked in at contract.
+        </p>
+
+        <h3 style="margin-top: 2rem;">The excavator decision.</h3>
+        <p>
+          One of the biggest hidden cost drivers on a pool build is the
+          excavator choice, which is driven entirely by access. Three scenarios
+          we see across Berwick:
+        </p>
+        <ul>
+          <li><strong>Standard 8-ton excavator with 5–7 tipper-truck cycles.</strong> Needs 3.5m of side-access width and a stable driveway. Dig completed in 1–2 days. Lowest cost per cubic metre. About 60% of Berwick blocks suit this.</li>
+          <li><strong>3-ton mid-size excavator with smaller 7m³ tippers.</strong> Needs about 2.4m of side-access width. Dig in 2–3 days. Modest cost premium ($1,500–$3,000) over the 8-ton option. Common on newer Officer and Clyde North estate blocks with narrower side-access.</li>
+          <li><strong>1.7-ton mini-excavator through a 1.2m gate.</strong> For tight Endeavour Hills, narrow-frontage Hampton Park, and any block where access is genuinely restricted. Dig in 4–6 days. $4,000–$8,000 cost premium over the 8-ton option because production rate is so much slower.</li>
+        </ul>
+        <p>
+          The fourth option, when it makes sense, is removing a panel of fence
+          for the duration of the dig — typically the rear-corner side fence —
+          to convert a tight-access block into a standard-access block. Cost
+          is $500–$1,200 for fence demolition, dig at the cheaper standard rate,
+          and reinstate at $1,800–$3,500 depending on the fence type. We work
+          this out at the site visit and compare the two paths in writing.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Australian Standards in play during excavation.</h3>
+        <p>
+          Three standards govern the dig itself. AS 2870 (residential slabs
+          and footings) drives the pier schedule based on the soil
+          classification. AS 2783 (use of reinforced concrete in swimming
+          pools) sets the structural design of the excavation and shell. AS
+          1839 (sprayed concrete) governs the shotcrete application that
+          follows the dig. We work to all three and the engineering is
+          certified before any concrete is poured.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/berwick/">Berwick</a>
+        <a class="area-pill" href="/cranbourne/">Cranbourne</a>
+        <a class="area-pill" href="/narre-warren/">Narre Warren</a>
+        <a class="area-pill" href="/hampton-park/">Hampton Park</a>
+        <a class="area-pill" href="/endeavour-hills/">Endeavour Hills</a>
+        <a class="area-pill" href="/city-of-casey/">All City of Casey</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Council, easements, soil — handled.</h2>
+        <p>We do the permit lodgement, the easement search, the build-over applications, and the neighbour letter. You sign the contract and watch the hole appear.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="mailto:quotes@berwickpools.com.au">Email quotes@berwickpools.com.au</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

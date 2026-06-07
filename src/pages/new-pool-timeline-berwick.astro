@@ -1,0 +1,182 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why is the soil test done before you give a fixed quote in Berwick?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Most of Berwick, Beaconsfield, Officer and Clyde North sits on Class H or H1 highly reactive clay. That single bit of geotechnical information changes the pier schedule, the steel weight, and the shell engineering — which in turn changes the price by $4,000–$12,000. Quoting before the soil report is guesswork. We pay for a $400 soil test up-front, get the AS 2870 site classification back in 5 working days, and only then put numbers in writing. It is the difference between a quote you can trust and a quote that becomes a variation later." }
+    },
+    {
+      "@type": "Question",
+      "name": "What does each of the five payment stages cover?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Stage 1 (10%) on contract — design, engineering, permits. Stage 2 (25%) at excavation — dig, soil haul, piers, formwork. Stage 3 (30%) at shell complete — shotcrete shell sprayed, cured and pressure tested. Stage 4 (25%) at interior finish — pebble or tile in, coping set, equipment plumbed. Stage 5 (10%) at handover — fence inspection, AS 1926 certificate of compliance, commissioning and water balance. Nothing is paid in advance of work done — every claim is tied to a visible milestone on the build." }
+    },
+    {
+      "@type": "Question",
+      "name": "How many weeks of rain buffer do you build into a Berwick pool program?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Two to four weeks, depending on the season we are excavating. Casey clay holds water — a 30mm rainfall event can shut a dig down for 5–10 days while the hole drains and the base re-firms. We schedule digs for autumn (March–May) where possible because the soil profile is at its driest and most stable. Winter digs add 3–4 weeks of weather contingency. Summer digs are fast but the heat affects shotcrete cure timing, so we wet-spray in the morning only." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can the build run faster than 8 weeks if I am paying cash?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No, and any builder who tells you otherwise is skipping a critical step. The 28-day shotcrete cure is non-negotiable — concrete reaches design strength at 28 days, not 14, not 21, no matter how much you spend. The trades sequence after that (interior finish, coping, paving, fence) cannot overlap because each stage needs the previous one fully set. We can compress permit and design at the front end if you make decisions quickly, but you cannot buy your way out of the cure. Eight weeks from sign to swim assumes everything goes right." }
+    },
+    {
+      "@type": "Question",
+      "name": "What if I miss a payment milestone — do you stop work?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Work pauses at the milestone the payment is attached to, and resumes within 48 hours of cleared funds. We do not penalty-charge for short delays — life happens. What we cannot do is keep crews and concrete trucks rolling on credit; the shotcrete subcontractor alone is a $14,000 day rate, and the supplier needs payment within 7 days. The 5-stage schedule exists to keep cashflow tight enough that nobody — builder, client, supplier — gets exposed." }
+    }
+  ]
+};
+---
+<Layout
+  title="New Concrete Pool Berwick — 8-Week Timeline & Payment Schedule | Berwick Pools"
+  description="Week-by-week schedule for a new concrete pool in Berwick. Soil-test-before-quote, 5-stage progress payments, rain-day buffer, AS 2870 site classification. SPASA Victoria member, VBA-registered."
+  canonical="https://berwickpools.com.au/new-pool-timeline-berwick/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">For homeowners planning a 2026–2027 build</span>
+      <h1>A realistic <span class="accent">8-week new-pool timeline</span> for Berwick — and the payment schedule that goes with it.</h1>
+      <p class="hero-sub">
+        The honest version of a Berwick pool build. What happens in each of the eight weeks,
+        what each of the five payment stages covers, why the soil test comes before the quote,
+        and where the rain-day buffer sits. No marketing-speak — just the program.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book a site visit</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>The soil test comes before the quote.</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          Most Berwick pool conversations skip the most important step. Someone gets a glossy
+          brochure quote at $58,000 for an 8m × 4m concrete shell, signs a contract, and then
+          three weeks later finds out the block is Class H1 reactive clay and the pier
+          schedule has just added $9,400 to the build. That is not a sales tactic — that is the
+          industry routinely under-quoting because the soil information was not on the table at
+          the time the price was set.
+        </p>
+        <p>
+          We do it the other way around. Before any number goes in writing, we book a
+          geotechnical engineer to drill two test holes on your block, take samples at 1.0m,
+          1.8m and 2.4m, and return an AS 2870 site classification. Most of the City of Casey
+          comes back Class H or H1 — highly to extremely reactive clay. A small number of
+          higher blocks around Beaconsfield Upper come back Class M (moderately reactive),
+          which actually saves money. Whatever you have got, we quote the real engineering for
+          your specific block, not a generic price.
+        </p>
+        <p>
+          The soil test costs us $380 and takes 5 working days. We carry that cost — you only
+          pay if you sign the build contract. It is the single best $400 we spend on every job
+          because it eliminates the most common cause of variations during construction.
+        </p>
+
+        <h3 style="margin-top: 2rem;">The week-by-week schedule.</h3>
+        <p>
+          This is for the build phase — after contract sign and permit issue. Permit timelines
+          add 4–6 weeks at the front of the program (planning permit only required for some
+          overlay zones; building permit is universal). We start the on-site clock when the
+          excavator arrives.
+        </p>
+        <ul>
+          <li><strong>Week 1 — Excavation and piers.</strong> 5–8 trucks of clay haul out depending on shell size. Bored piers drilled to 1.5–2.4m below the active soil zone, depending on the AS 2870 classification. Pier cages dropped, concrete poured, 24-hour cure.</li>
+          <li><strong>Week 2 — Steel and plumbing.</strong> Full reinforcing cage tied to pier starter bars at 200mm centres. Suction and return plumbing roughed in. Bonding earth strap installed. Engineer inspects before shotcrete.</li>
+          <li><strong>Week 3 — Shotcrete shell.</strong> Wet-mix shotcrete sprayed at 200–250mm thickness. One day on site for a standard 8 × 4m. Daily wet-down begins immediately.</li>
+          <li><strong>Weeks 4–6 — The 28-day cure.</strong> Non-negotiable. Concrete reaches design strength at 28 days. We use this time to install fence footings, run the equipment-pad slab, and start the paving prep so we are not idle.</li>
+          <li><strong>Week 7 — Interior finish and coping.</strong> Pebble, quartz or tile applied to the shell. Bullnose tile or travertine coping set on top. Waterline tile band installed. 48-hour cure on the finish.</li>
+          <li><strong>Week 8 — Equipment, fence, fill and handover.</strong> Pump, filter, salt chlorinator, heater (if specified), and automation commissioned. AS 1926 pool fence inspected and certified. Pool filled. Water balanced. Handover walkthrough and warranty documents.</li>
+        </ul>
+        <p>
+          That is an 8-week clean run. In the real world, two to four weeks of weather buffer
+          gets baked in depending on the season. Winter digs (June–August) are slowest because
+          a 30mm rainfall closes the hole for a week. Autumn digs (March–May) are the fastest
+          because Casey clay is at its driest and most stable.
+        </p>
+
+        <h3 style="margin-top: 2rem;">The 5-stage progress payment schedule.</h3>
+        <p>
+          Domestic Building Contracts Act 1995 (Victoria) caps deposits at 10% and requires
+          progress payments tied to defined stages. Here is how our standard schedule maps to
+          the build.
+        </p>
+        <ol>
+          <li><strong>Stage 1 — Deposit (10%) on contract sign.</strong> Covers design fee, engineering report, permit lodgement and the materials deposit on long-lead items (premium tile imports, custom-sized shells, automation hardware).</li>
+          <li><strong>Stage 2 — Excavation complete (25%).</strong> Hole dug to design depth, piers bored and poured, soil haul invoiced. This is the highest variable-cost week of the job and the supplier payments fall here.</li>
+          <li><strong>Stage 3 — Shell complete (30%).</strong> Shotcrete sprayed, cured for 28 days, and pressure tested. By this point you have a structurally complete pool — just no finish, no coping, no equipment.</li>
+          <li><strong>Stage 4 — Interior and coping complete (25%).</strong> Pebble/tile/quartz in. Coping set. Waterline tile installed. Equipment pad ready for fit-off.</li>
+          <li><strong>Stage 5 — Practical completion (10%).</strong> Fence certified to AS 1926, equipment commissioned, water balanced, handover walkthrough done, warranty documents and pool-fence Form 23 issued.</li>
+        </ol>
+        <p>
+          No payment is requested in advance of work done. Every stage claim is invoiced after
+          you can see the milestone on site — we encourage you to walk through with us before
+          you transfer. The 10% final-stage retention is your leverage to make sure the
+          handover items get finished properly.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Where the rain-day buffer sits.</h3>
+        <p>
+          We do not pad every stage equally. The buffer sits where the risk sits: the
+          excavation and pier weeks. A wet autumn or a wet winter can add 2–10 days to that
+          single phase. After the shell is sprayed and cured, weather barely matters — interior
+          finish, coping and equipment all happen with the pool empty under a tarp or behind a
+          fence, and rain does not stop them. So a “16-week build” in our paperwork is really
+          “8 weeks of work plus 4–6 weeks of permit lead-time plus 2–4 weeks of weather
+          buffer” — and the weather buffer collapses to zero if we time the dig to autumn.
+        </p>
+
+        <h3 style="margin-top: 2rem;">What we tell clients to lock in early.</h3>
+        <ul>
+          <li><strong>Interior finish.</strong> 6–8 week lead time on premium quartz blends and imported glass-bead pebble. Decide at contract sign.</li>
+          <li><strong>Coping.</strong> Travertine and bluestone need to be ordered before the shell goes in.</li>
+          <li><strong>Fence type.</strong> Glass-panel pool fences are a 4-week fabrication lead. Aluminium tubular is in stock locally.</li>
+          <li><strong>Heater.</strong> Heat-pump pool heaters were on 12-week back-order through 2025. Order at contract sign or you will hold up Stage 5.</li>
+        </ul>
+        <p>
+          Get those four decisions made in the first fortnight and your 8-week build clock
+          runs cleanly. Leave them to “we’ll decide when we’re closer” and the build pauses
+          while you are choosing tile samples.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we build.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/berwick/">Berwick</a>
+        <a class="area-pill" href="/cranbourne/">Cranbourne</a>
+        <a class="area-pill" href="/narre-warren/">Narre Warren</a>
+        <a class="area-pill" href="/hampton-park/">Hampton Park</a>
+        <a class="area-pill" href="/endeavour-hills/">Endeavour Hills</a>
+        <a class="area-pill" href="/city-of-casey/">All City of Casey</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Get a real 8-week schedule for your block.</h2>
+        <p>Soil test first, fixed quote in 7–10 days, 5-stage payment schedule on paper. SPASA Victoria member, VBA-registered builder.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="mailto:quotes@berwickpools.com.au">Email quotes@berwickpools.com.au</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

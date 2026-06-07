@@ -1,0 +1,138 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a pool cost in Narre Warren?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Narre Warren ranges $38K-$80K depending on type and size. A standard 7-8m fibreglass shell installed with paving and fencing runs $40K-$58K. A custom concrete 8-9m with tiled coping and integrated spa is $65K-$90K. The older parts of Narre Warren (south of Webb Street, near Fountain Gate) have mature blocks 700-1,000m² and lean toward concrete builds; the newer estates north and east (around Lakeside, Narre Warren North) are smaller blocks and lean fibreglass." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you build a pool near the Lakeside estate in Narre Warren?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Lakeside has good crane access from most streets (wide curb cuts, established power-line clearances), Class M soil throughout, and lot sizes 550-750m² which fit 7-8m pools comfortably. The estate covenant requires glass or black aluminium fencing (no Colorbond), neutral paving palette and equipment screening from the street — we build to that without complaint. Permit and OC approval together usually run 5-7 weeks." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the most popular pool spec in Narre Warren?",
+      "acceptedAnswer": { "@type": "Answer", "text": "8m × 4m fibreglass shell, 1.2m shallow / 1.8m deep, with a tanning ledge at the shallow end. Salt chlorinator, variable-speed pump, cartridge filter, optional heat pump add-on. Travertine paved surround, frameless glass fence on one or two sides, black tubular aluminium on the rest. All up around $52K-$62K. It's the spec that fits a young Narre Warren family budget and lifestyle without compromising on quality." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is access from Fountain Gate side an issue for pool builds?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Mature Narre Warren streets around Fountain Gate (Bemersyde Drive, Centre Road) often have 1980s brick fences and mature trees that block crane swing. We check at the site visit — if the crane can't get in, concrete is the answer (we shotcrete in place, no shell to crane). On older blocks we sometimes drop a panel of the brick fence, build the pool, then reinstate — that's $1.5K-$3K added but it's still usually cheaper than swapping to concrete." }
+    },
+    {
+      "@type": "Question",
+      "name": "Are Narre Warren backyards big enough for a pool and kids' play space?",
+      "acceptedAnswer": { "@type": "Answer", "text": "On the newer 500-650m² estate blocks it's tight but doable. The trick is keeping the pool to 7m × 3.5m rather than the showroom 8m × 4m — saves 4-5m² of paved surround as well, which adds up to a meaningful chunk of grass for a trampoline or swing-set. We do a lot of these layouts. The older Narre Warren blocks (700-1,000m²) have no problem fitting an 8-9m pool plus 30-40m² of lawn plus a 4 × 5 alfresco." }
+    }
+  ]
+};
+---
+<Layout
+  title="Pool Builders Narre Warren | Composite & Concrete Pools | (03) 9003 0108"
+  description="Concrete and fibreglass pool builders for Narre Warren — Lakeside, Fountain Gate, Narre Warren North and South. Family-friendly designs, AS 1926 fence compliance, design-covenant pre-approval. Free on-site consultation."
+  canonical="https://berwickpools.com.au/narre-warren/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Narre Warren &middot; Lakeside &middot; Fountain Gate</span>
+      <h1>Pool builders in <span class="accent">Narre Warren</span>.</h1>
+      <p class="hero-sub">
+        Narre Warren is established Casey &mdash; mature 80s and 90s housing stock
+        around Fountain Gate, plus the newer Lakeside estate up north. Most builds
+        here are young or growing families with kids under 12 wanting a pool the
+        whole family will actually use. Practical, well-engineered, AS 1926 safe
+        from day one.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book a free consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why Narre Warren</span>
+      <h2>The Narre Warren pool story.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>Family-first design.</h3>
+        <p>
+          About 80% of our Narre Warren pools are sized for kids. That means a
+          gentle tanning-ledge entry (50&ndash;200mm deep, perfect for toddlers
+          and grandparents), a wider shallow end (1.0&ndash;1.2m for 4&ndash;8
+          year olds), and a 1.8m deep end for older kids and adults. We don&rsquo;t
+          do showroom &lsquo;adult-only resort&rsquo; pools here often &mdash; the
+          ones we build are designed to handle six kids at a birthday party
+          without anyone getting drowned in the shallow end.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Mature blocks, access challenges.</h3>
+        <p>
+          Streets around Fountain Gate &mdash; Bemersyde Drive, Centre Road,
+          Outlook Drive &mdash; have 1980s brick fences, established eucalypts
+          and overhead power lines that constrain crane swing. We measure access
+          carefully at the site visit. If the crane can&rsquo;t get in clean we
+          either drop and reinstate a fence panel ($1.5K&ndash;$3K) or move to
+          a sprayed-shotcrete concrete pool where access doesn&rsquo;t matter.
+          We do not bash trees down to fit a fibreglass shell &mdash; the
+          tree-removal permit alone would kill the timeline.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Lakeside estate &mdash; the newer half.</h3>
+        <p>
+          The Lakeside estate north of the Princes Highway is a different build
+          environment: 550&ndash;750m&sup2; blocks, straight street frontages,
+          newer Class M reactive soil, design covenants requiring glass or black
+          tubular fencing. About <strong>70% of our Lakeside builds are
+          fibreglass</strong> &mdash; crane the shell in from the street, plumb
+          up and pave in 2 weeks of on-site work.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Typical Narre Warren projects.</h3>
+        <ul>
+          <li>8m &times; 4m fibreglass + tanning ledge + glass fence, Lakeside ($50K&ndash;$62K)</li>
+          <li>7m &times; 3.5m fibreglass + travertine paving, established Narre Warren ($45K&ndash;$55K)</li>
+          <li>9m custom concrete + integrated spa + tiled coping, Narre Warren South ($75K&ndash;$95K)</li>
+          <li>3.5m Plungie precast plunge pool, courtyard townhouse near Westfield ($32K&ndash;$42K)</li>
+          <li>Renovation of leaking 1990s pebblecrete pool: reseal + resurface + equipment swap ($16K&ndash;$26K)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Other Casey suburbs we cover.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/berwick/">Berwick</a>
+        <a class="area-pill" href="/cranbourne/">Cranbourne</a>
+        <a class="area-pill" href="/hampton-park/">Hampton Park</a>
+        <a class="area-pill" href="/endeavour-hills/">Endeavour Hills</a>
+        <a class="area-pill" href="/city-of-casey/">All City of Casey</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free Narre Warren pool consultation.</h2>
+        <p>Family-first design. Honest access check. Fixed quote in 7 days.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,310 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a new pool cost in Berwick in 2026?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Realistic 2026 City of Casey pricing: a fully custom concrete (sprayed-shotcrete) pool with tiled coping and standard equipment runs $55,000-$85,000 for an 8m × 4m, $70,000-$110,000 once you add heating, in-floor cleaning, lighting and a feature wall. A premium fibreglass pool of similar size, installed with full surrounds and equipment, runs $40,000-$60,000. A plunge pool 3-5m comes in $28,000-$45,000. Add $6,000-$12,000 for AS 1926-compliant glass or aluminium pool fencing, $4,000-$10,000 for paving the surround, and $3,000-$8,000 for landscaping. We give a written fixed-price quote — no 'from $30K' starting prices that triple by handover." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a permit to build a pool in the City of Casey?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every pool over 300mm deep in Victoria needs a building permit, and since the 2020 Victorian pool register laws every pool must be registered with Council and have its fence certified within 30 days of completion. The City of Casey processes pool building permits in 4-8 weeks once we lodge the structural engineering and AS 1926.1-2012 fence certificate. We handle the lot — permit, surveyor, engineer, fence certifier, register lodgement. The penalty for an unregistered pool is up to $1,800 per offence." }
+    },
+    {
+      "@type": "Question",
+      "name": "Concrete or fibreglass — which is right for a Berwick block?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Honest answer, no upsell: for an awkwardly shaped block, a slope, a precise depth/length spec or a tiled-finish look, concrete wins — fully custom, 50-year structural life, but $50K-$90K and 12-18 weeks. For a flat back yard with reasonable access and a standard rectangular or kidney shape, fibreglass wins on price ($35-$60K), speed (4-8 weeks from delivery) and warranty (most quality shells are 25-year structural). Berwick's reactive clay handles both fine if engineered properly — concrete needs deeper piers, fibreglass needs a properly screeded and drained sand bed. We'll tell you on the site visit which one your block actually suits." }
+    },
+    {
+      "@type": "Question",
+      "name": "What does pool fence compliance under AS 1926 actually require?",
+      "acceptedAnswer": { "@type": "Answer", "text": "AS 1926.1-2012 is the current Victorian standard and the City of Casey enforces it strictly. The non-negotiables: 1.2m minimum fence height measured externally; no horizontal climbable footholds within 900mm of the top; gap under the fence ≤100mm; self-closing, self-latching gate that opens outward from the pool; latch handle 1.5m above ground; 900mm non-climbable zone around the entire pool perimeter. Glass panels need to be Grade A safety glass on certified spigots. We design fence compliance into the pool layout from day one — retrofitting compliance later is expensive and ugly." }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to build a pool in Berwick?",
+      "acceptedAnswer": { "@type": "Answer", "text": "From the day you sign the contract: fibreglass total 8-14 weeks (4-6 weeks permits + 2-4 weeks shell delivery + 1-2 weeks install + 1-2 weeks paving and fence). Concrete total 16-26 weeks (6-8 weeks permits + 1-2 weeks excavation + 1 week steel and shotcrete + 4 weeks cure + 2-4 weeks tiling and coping + 2-3 weeks paving and fence). The single biggest variable is rain delay on excavation — Casey's reactive clay turns to slurry after 30mm and shuts the site down. We plan around the weather window, not against it." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the soil in Berwick a problem for pool builds?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Berwick, Narre Warren, Hampton Park and most of Casey sit on Class M (moderately reactive) or Class H1/H2 (highly reactive) clay. The clay swells in wet winters and shrinks in dry summers — same movement that cracks driveways and pool shells built by cheap operators. Our concrete pools sit on bored piers driven 1.5-2.4m below the active zone, with reinforced footings under the shell base. Fibreglass shells get a screeded crushed-rock sand bed with subsoil ag-drain on the downhill side. Skip either step and you'll see hairline cracking in concrete or shell shift in fibreglass within 3-5 years. We don't skip." }
+    },
+    {
+      "@type": "Question",
+      "name": "Saltwater, mineral or chlorine — which water system?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Berwick is 35km from the coast, so true saltwater corrosion isn't the worry that it is for bayside builders — all three systems work. Saltwater chlorinators are the Australian default: lower ongoing chemical cost, gentler on skin, but the salt cell needs replacement every 5-7 years ($800-$1,400). Mineral systems (Naked, Aquatherepe, Magnapool) use magnesium and potassium — kindest on skin and plants, slightly higher upfront cost. Pure chlorine (dosing pump) is cheapest to install but means handling chlorine constantly. For families with young kids or sensitive skin we usually recommend mineral; for everyone else saltwater is the safest default. We're brand-agnostic — we'll install what you choose." }
+    }
+  ]
+};
+---
+<Layout
+  title="Berwick Pools | Concrete & Fibreglass Pool Builders, City of Casey | (03) 9003 0108"
+  description="Concrete and fibreglass pool builders for Berwick, Cranbourne, Narre Warren, Hampton Park and Endeavour Hills. Custom designs, plunge pools, renovations and equipment. VBA-registered, AS 1926 fence compliance, reactive-clay engineering. Free on-site consultation.">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+<style>
+  /* Image-banner integration (added 2026-06-04) */
+  .hero {
+    position: relative;
+    background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.55), rgba(15, 23, 42, 0.28)), url('/images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+  }
+  .hero h1,
+  .hero .hero-sub,
+  .hero .hero-eyebrow,
+  .hero .hero-trust,
+  .hero .accent {
+    color: #fff;
+  }
+  .hero .accent {
+    color: #fcd34d;
+  }
+  .hero .hero-eyebrow {
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .hero .hero-trust {
+    color: rgba(255, 255, 255, 0.78);
+  }
+
+  .image-banner {
+    width: 100%;
+    max-height: 460px;
+    overflow: hidden;
+    margin: 0;
+  }
+  .image-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 70%;
+    display: block;
+  }
+  .image-banner figcaption {
+    background: rgba(15, 23, 42, 0.92);
+    color: rgba(255, 255, 255, 0.85);
+    padding: 0.85rem 1.25rem;
+    text-align: center;
+    font-size: 0.95rem;
+    margin: 0;
+  }
+</style>
+
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Berwick &middot; Cranbourne &middot; Narre Warren &middot; City of Casey</span>
+      <h1>Casey&rsquo;s most-referred <span class="accent">concrete &amp; fibreglass</span> pool builders.</h1>
+      <p class="hero-sub">
+        Over 200 pools built across Berwick, Cranbourne, Narre Warren, Hampton Park and
+        Endeavour Hills since 2014. Repeat-client and referral work makes up roughly
+        70% of our calendar. VBA-registered. AS 1926 fence compliance built in.
+        Reactive-clay engineering done properly &mdash; piers, not promises.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book a free on-site consultation</a>
+      </div>
+
+      <div class="hero-trust">
+        <div><strong>200+ pools</strong>Built across the City of Casey</div>
+        <div><strong>$35K&ndash;$90K</strong>Typical project range</div>
+        <div><strong>AS 1926</strong>Fence compliance included</div>
+        <div><strong>VBA-registered</strong>Builder, not subcontractor</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">What we build</span>
+      <h2>Five things, done properly.</h2>
+      <p class="section-lead">
+        From a 3m plunge pool tucked into a courtyard through to an 11m custom concrete
+        family pool with a wet edge and in-floor cleaning. We design, engineer, build,
+        certify and hand over. No subbing out the hard parts.
+      </p>
+
+      <div class="svc-grid">
+        <a class="svc-card" href="/services/new-concrete-pool/">
+          <div class="svc-icon" aria-hidden="true">&#9728;</div>
+          <h3>New concrete pool</h3>
+          <p>Fully custom sprayed-shotcrete or reinforced-concrete pools. Any shape, any depth, tiled or pebble interior. The 50-year option for owners who want exactly what they want. $50K&ndash;$90K typical, 16&ndash;26 weeks.</p>
+          <span class="svc-link">See concrete pool builds &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/new-fibreglass-pool/">
+          <div class="svc-icon" aria-hidden="true">&#9783;</div>
+          <h3>New fibreglass pool</h3>
+          <p>Pre-formed Australian-made fibreglass shells (Compass, Leisure, Narellan, Plungie). Lower cost, faster install, 25-year structural warranty. Ideal for flat blocks with reasonable side access. $35K&ndash;$60K typical, 8&ndash;14 weeks.</p>
+          <span class="svc-link">See fibreglass options &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/plunge-pool/">
+          <div class="svc-icon" aria-hidden="true">&#9784;</div>
+          <h3>Plunge pool</h3>
+          <p>Compact deep pools 3&ndash;5m long, 1.4&ndash;1.6m deep. Year-round use with a heat pump. Concrete or pre-cast (Plungie). Perfect for townhouses, courtyards and small Berwick blocks. $25K&ndash;$45K typical.</p>
+          <span class="svc-link">See plunge pool builds &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/pool-renovation/">
+          <div class="svc-icon" aria-hidden="true">&#9618;</div>
+          <h3>Pool renovation</h3>
+          <p>Tired 90s pebblecrete pool? Failing tiles, faded interior, leaking skimmer, ancient equipment? We resurface, retile, replumb and re-equip. Cheaper than rebuilding, brings a 30-year-old pool back to 2026 spec. $8K&ndash;$30K.</p>
+          <span class="svc-link">See pool renovations &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/pool-equipment/">
+          <div class="svc-icon" aria-hidden="true">&#9881;</div>
+          <h3>Pool equipment</h3>
+          <p>Variable-speed pumps, cartridge and media filters, heat pumps, salt chlorinators, mineral systems, automation, robotic cleaners. Install on new pools or swap tired gear that&rsquo;s costing you in power and chemicals. $1.5K&ndash;$8K.</p>
+          <span class="svc-link">See equipment options &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <figure class="image-banner">
+    <img src="/images/result.jpg" alt="Luxury backyard pool with deep blue water and entertaining area" loading="lazy" decoding="async" />
+    <figcaption>Concrete or fibreglass — fixed-price under DBI.</figcaption>
+  </figure>
+
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why a Berwick pool specialist</span>
+      <h2>Three things a Casey pool build has to get right.</h2>
+      <div class="divider"></div>
+
+      <div style="display: grid; grid-template-columns: 1fr; gap: 2rem; max-width: 60rem;">
+        <div>
+          <h3>Reactive-clay engineering.</h3>
+          <p>
+            Berwick, Narre Warren, Hampton Park and most of the Casey growth corridor
+            sit on Class M to Class H2 reactive clay. The same ground movement that
+            cracks driveways and lifts house slabs will crack a concrete pool shell
+            and shift a fibreglass one if the footings aren&rsquo;t engineered for
+            the active zone. We bore concrete piers <strong>1.5&ndash;2.4m</strong>
+            below the active layer, lay reinforced footings under the shell base, and
+            on fibreglass jobs we screed a deep crushed-rock sand bed with a subsoil
+            ag-drain on the downhill side. Cheaper builders skip both. You see the
+            result in 3&ndash;5 years.
+          </p>
+        </div>
+        <div>
+          <h3>AS 1926 pool fence compliance from day one.</h3>
+          <p>
+            Every Victorian pool must be registered with Council and have its fence
+            certified to AS 1926.1-2012 within 30 days of completion. The 2020 register
+            laws bite hard &mdash; up to $1,800 per offence per day for an unregistered
+            or non-compliant pool. We design fence compliance into the build at the
+            very first sketch: 1.2m external height, no climbable handholds within
+            900mm of the top, gate self-closing outward away from the pool, glass
+            panels Grade A safety glass on certified spigots. Plus the full 900mm
+            non-climbable zone around the perimeter. The fence certifier signs off
+            before you ever swim.
+          </p>
+        </div>
+        <div>
+          <h3>VBA-registered swimming pool builder.</h3>
+          <p>
+            Domestic Builder (Limited) - Swimming Pools and Spas under the Victorian
+            Building Authority. That registration means we carry Domestic Building
+            Insurance (the home warranty cover that protects you for 6 years and 2
+            months of latent defects), our work passes mandatory inspections, and
+            the City of Casey will actually issue you a permit. Plenty of operators
+            quote pool builds without the right registration class &mdash; check
+            anyone&rsquo;s VBA number at <strong>vba.vic.gov.au</strong> before
+            paying a deposit. Ours sits on every quote.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Service areas</span>
+      <h2>Where we build.</h2>
+      <p class="lead" style="max-width: 42rem; margin-bottom: 1rem;">
+        Our core territory is the City of Casey &mdash; Berwick, Cranbourne, Narre Warren,
+        Hampton Park, Endeavour Hills &mdash; plus the growth corridor running south
+        through Clyde, Cranbourne East and Officer. We don&rsquo;t travel past the
+        Casey boundary; staying tight keeps our build calendar honest.
+      </p>
+      <div class="areas-grid">
+        <a class="area-pill" href="/berwick/">Berwick</a>
+        <a class="area-pill" href="/cranbourne/">Cranbourne</a>
+        <a class="area-pill" href="/narre-warren/">Narre Warren</a>
+        <a class="area-pill" href="/hampton-park/">Hampton Park</a>
+        <a class="area-pill" href="/endeavour-hills/">Endeavour Hills</a>
+        <a class="area-pill" href="/city-of-casey/">City of Casey</a>
+        <span class="area-pill area-pill-static">Cranbourne East</span>
+        <span class="area-pill area-pill-static">Cranbourne North</span>
+        <span class="area-pill area-pill-static">Cranbourne West</span>
+        <span class="area-pill area-pill-static">Clyde</span>
+        <span class="area-pill area-pill-static">Clyde North</span>
+        <span class="area-pill area-pill-static">Hallam</span>
+        <span class="area-pill area-pill-static">Doveton</span>
+        <span class="area-pill area-pill-static">Beaconsfield</span>
+        <span class="area-pill area-pill-static">Officer</span>
+      </div>
+    </div>
+  </section>
+  <figure class="image-banner">
+    <img src="/images/detail.jpg" alt="Pool waterline mosaic tile close-up" loading="lazy" decoding="async" />
+    <figcaption>Soil test + engineer&#x27;s drawings before we quote.</figcaption>
+  </figure>
+
+
+  <section class="section section-dark">
+    <div class="section-inner">
+      <span class="section-eyebrow">How it works</span>
+      <h2>From first call to first swim &mdash; 6 stages.</h2>
+
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><h3>Free site visit</h3><p>On-site within 7 days. We measure the block, check access, look at soil class, talk through concrete vs fibreglass honestly. 60&ndash;90 min, no obligation.</p></div>
+        <div class="step"><div class="step-num">2</div><h3>Design &amp; fixed quote</h3><p>Concept plan with pool position, paving layout, fence line and equipment location. Fixed-price written quote within 7&ndash;10 days. No &lsquo;starting from&rsquo; pricing.</p></div>
+        <div class="step"><div class="step-num">3</div><h3>Permit &amp; engineering</h3><p>We lodge the City of Casey building permit, engage the structural engineer, organise the surveyor and pre-book the AS 1926 fence certifier. 4&ndash;8 weeks for approval.</p></div>
+        <div class="step"><div class="step-num">4</div><h3>Excavation &amp; shell</h3><p>Concrete: dig, pier, steel, shotcrete, cure. Fibreglass: dig, sand bed, crane-set shell, plumb, backfill. 1&ndash;4 weeks depending on type and weather.</p></div>
+        <div class="step"><div class="step-num">5</div><h3>Surrounds &amp; equipment</h3><p>Coping, paving, fence, equipment install, automation. Fill the pool, balance the water chemistry, commission everything, hand you the manuals.</p></div>
+        <div class="step"><div class="step-num">6</div><h3>Certify &amp; register</h3><p>Fence certifier signs off, we lodge with the City of Casey pool register, you get the compliance certificate. Then 6 years 2 months of warranty cover. Then you swim.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Ready for a free on-site pool consultation?</h2>
+        <p>60&ndash;90 minutes on your block. We measure, check soil, look at access, talk through concrete vs fibreglass without the upsell.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section section-tint">
+    <div class="section-inner">
+      <h2>Articles &amp; guides for Berwick</h2>
+      <p>Practical reading from our jobs in Berwick &mdash; what we charge, what to watch for, when a callout is worth it.</p>
+      <ul class="guides-list">
+          <li><a href="/fibreglass-vs-concrete-berwick/">Fibreglass vs concrete in Berwick — the soil decides more than the brochure does</a></li>
+          <li><a href="/new-pool-timeline-berwick/">A realistic 8-week new-pool timeline for Berwick — and the payment schedule that goes with it</a></li>
+          <li><a href="/pool-excavation-berwick/">Pool excavation in Berwick — what Council needs, what neighbours need, and how the dig actually works</a></li>
+          <li><a href="/pool-resurfacing-berwick/">Pool resurfacing in Berwick — pebble, quartz, tile and what each one really feels like</a></li>
+      </ul>
+    </div>
+  </section>
+
+</Layout>

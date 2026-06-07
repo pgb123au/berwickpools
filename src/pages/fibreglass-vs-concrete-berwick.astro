@@ -1,0 +1,193 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why does Berwick clay push the decision toward concrete?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Class H and H1 reactive clay swells and shrinks seasonally — a movement range of 40–70mm at the surface across a year is normal in Casey. A concrete shell with bored piers anchored 1.5–2.4m below the active zone rides that movement on a stable foundation. A fibreglass shell sits on a compacted sand base and is unanchored — when the clay moves, the shell can tilt, distort, or in the worst case crack. Fibreglass can be made to work on reactive clay with extra ground-anchor straps and a heavier sand pad, but the engineering premium narrows the cost gap that made fibreglass attractive in the first place." }
+    },
+    {
+      "@type": "Question",
+      "name": "When does fibreglass actually win in the Berwick area?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Three scenarios. First, sandier sites — parts of Clyde North and the lower-lying blocks toward Cranbourne South get Class M (moderately reactive) classifications, where fibreglass installs cleanly. Second, tight access blocks where a crane-lift over a roof is cheaper than excavating for shotcrete. Third, fast-turn rental and Airbnb pools where the owner wants a 4-week install rather than a 16-week build and is happy with the 25–30 year design life. On a flat sandy block with crane access, fibreglass is the right answer." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the 50-year vs 25-year design life real or just sales talk?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Real. A properly engineered shotcrete shell with full reo and good waterproofing has a documented 50+ year structural life — there are 1960s and 1970s Melbourne concrete pools still operating on their original shell, with only interior-finish refresh cycles in between. Fibreglass gelcoat starts to oxidise and craze around the 20–25 year mark and the shell typically needs an epoxy refinish to push it to 30. Fibreglass technology has improved (modern vinyl-ester shells outperform 90s polyester) but the structural-life difference is genuine. Whether you care depends on how long you plan to own the house." }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the surface-finish flexibility actually mean in practice?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A concrete pool can have any interior surface — pebble in 30+ colours, quartz blends, glass-bead, full porcelain tile, glass mosaic, even natural stone. You also choose coping independently — bullnose tile, travertine, bluestone, precast. A fibreglass pool comes in whatever gelcoat colour the manufacturer offers (typically 6–10 options) and the coping is your own choice but the shell colour is locked in for the life of the pool. If you want the dark luminous interior or the all-white Mediterranean look, that is a concrete decision. If a standard pebble-blue gelcoat suits you fine, fibreglass is great value." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I get a hybrid — fibreglass speed with concrete-style finish?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Not really. Some manufacturers offer ceramic-coated fibreglass or premium textured gelcoats that approach a quartz-finish feel, and they look fantastic — but you are still inside a fibreglass shell, with a fibreglass design life. The opposite hybrid (fast concrete) does not exist either; the 28-day shotcrete cure is the rate-limiter on the concrete program. The honest answer is: pick the format that matches your block and your timeline, and accept the trade-offs that come with it." }
+    }
+  ]
+};
+---
+<Layout
+  title="Fibreglass vs Concrete Pool in Berwick — Soil, Lifecycle, Cost | Berwick Pools"
+  description="Honest comparison of fibreglass vs concrete pools for Berwick clay. Reactive-clay engineering, 25 vs 50-year design life, surface finish flexibility, install time, and when each format wins."
+  canonical="https://berwickpools.com.au/fibreglass-vs-concrete-berwick/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">A side-by-side from a builder who installs both</span>
+      <h1>Fibreglass vs concrete in Berwick — <span class="accent">the soil decides more than the brochure does</span>.</h1>
+      <p class="hero-sub">
+        We build both formats. This is the honest comparison: why Casey clay tilts the
+        decision one way, why coastal-sandier sites tilt the other, and how the 25-year
+        vs 50-year design-life conversation plays out across a real ownership lifecycle.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book a site visit</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>The Berwick-clay reality.</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          The soil under your back lawn is the most important variable in this decision.
+          Most of Berwick, Beaconsfield, Officer, Narre Warren and the older parts of
+          Hampton Park return AS 2870 Class H or H1 site classifications — highly to
+          extremely reactive clay. That clay swells in winter when it absorbs rain and
+          shrinks in summer when it dries out. Surface movement of 40–70mm over an
+          annual cycle is normal. A pool shell has to deal with that movement somehow.
+        </p>
+        <p>
+          A properly engineered concrete pool deals with it by anchoring the shell to
+          bored piers that reach below the active soil zone — typically 1.5m to 2.4m
+          deep, depending on the AS 2870 classification. The piers sit in stable
+          parent clay that does not move seasonally. The reo cage ties the shell to
+          the piers. The clay above can move; the shell does not.
+        </p>
+        <p>
+          A fibreglass pool deals with it differently. The shell arrives as a single
+          moulded piece, gets craned in, and sits on a 100–200mm compacted sand pad
+          inside the excavated hole. The shell itself is not anchored to anything
+          beneath — backfill compaction around it holds it in place. On Class M or
+          Class A soils (sand, gravel, low-reactive clay) that works perfectly for the
+          life of the pool. On Class H reactive clay, the shell can experience
+          differential pressure as the surrounding clay moves, especially during the
+          first 2–3 seasonal cycles before the backfill fully settles.
+        </p>
+        <p>
+          You can engineer a fibreglass pool for reactive-clay sites — additional
+          ground anchors, a thicker sand bedding pad, a perimeter drainage bund — but
+          each upgrade narrows the cost gap that made fibreglass the attractive
+          option to begin with. By the time you have engineered a fibreglass install
+          properly for Class H1, you are within $8,000–$15,000 of a concrete shell,
+          and the concrete shell still has the longer design life.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Where fibreglass wins anyway.</h3>
+        <p>
+          We install fibreglass pools regularly because the soil is not always the
+          deciding factor. Three situations where we actively recommend fibreglass:
+        </p>
+        <ul>
+          <li><strong>Sandier blocks.</strong> Parts of Clyde North, the newer estates in Officer, and the lower-lying blocks toward Cranbourne South return Class M classifications. Fibreglass installs cleanly with standard sand bedding — no upgrade required.</li>
+          <li><strong>Tight access.</strong> A crane lift over a single-storey roof can place a fibreglass shell in 90 minutes. The same block done in concrete would need an 8-ton excavator threading through a side gate, half a dozen concrete trucks, and a shotcrete pumper — sometimes physically impossible without removing fencing.</li>
+          <li><strong>Fast turn-around.</strong> Investment property, holiday rental, or a primary home that is being sold in 3–5 years. The 4-week fibreglass install vs 16–26 week concrete program is a real difference when you are trying to add value before sale.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">The 25 vs 50-year design life conversation.</h3>
+        <p>
+          The numbers are real, but the way to use them depends on you. A properly
+          engineered shotcrete shell with full reo and modern waterproofing has a
+          documented 50+ year structural life. The interior finish (pebble, quartz,
+          tile) is on a separate 15–25 year cycle and gets refreshed without touching
+          the shell. The equipment (pump, filter, chlorinator) gets replaced on a
+          10–15 year cycle. The shell itself is the bone structure of the pool and
+          should outlast your time in the house.
+        </p>
+        <p>
+          A modern fibreglass shell has a 25–30 year design life. Gelcoat starts to
+          oxidise and craze somewhere around the 20-year mark and the shell typically
+          needs an epoxy refinish to push it through to 30. Manufacturers warrant the
+          structural shell for 25 years and the surface for 7–10 — both genuinely
+          good warranties for the format.
+        </p>
+        <p>
+          So how do you use those numbers? If you are 35 years old, building your
+          forever home, planning to swim with grandchildren, the concrete shell is
+          the answer — you will own the pool through one finish-refresh cycle and
+          still be on the original shell at age 75. If you are 55, downsizing, and
+          this is the pool that gets you to your next-house sale in 10–12 years,
+          fibreglass does the job and saves you $20,000.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Surface-finish flexibility.</h3>
+        <p>
+          A concrete shell takes any interior finish on the market. We bring physical
+          samples to every site visit — pebble in dozens of shades, quartz blends
+          like StoneScapes and PebbleSheen, glass-bead pebble that shimmers in
+          afternoon sun, full porcelain mosaic tile, glass mosaic in any colour
+          combination, and natural stone for the very-high-end builds. Coping is
+          chosen independently. Waterline tile is its own decision.
+        </p>
+        <p>
+          A fibreglass shell comes in whatever gelcoat colour the manufacturer offers.
+          The current Australian fibreglass market gives you 6–10 colour choices,
+          ranging from white through pebble-blue to ebony. Some manufacturers offer a
+          ceramic-coated premium finish — closer to a quartz feel underfoot — but the
+          colour is still locked in at the factory. Coping you choose independently;
+          waterline trim is integrated into the shell.
+        </p>
+
+        <h3 style="margin-top: 2rem;">A real cost-per-year framing.</h3>
+        <p>
+          If you divide capital cost by design life, the two formats land closer than
+          the sticker prices suggest. A $58,000 concrete shell over a 50-year life is
+          roughly $1,160 per year. A $42,000 fibreglass shell over a 28-year life is
+          roughly $1,500 per year. Concrete is actually slightly cheaper per year of
+          design life. But cash flow matters too — and the $16,000 capital difference
+          is the gap that funds a heat pump, a glass fence and the paving for many
+          families.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we build.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/berwick/">Berwick</a>
+        <a class="area-pill" href="/cranbourne/">Cranbourne</a>
+        <a class="area-pill" href="/narre-warren/">Narre Warren</a>
+        <a class="area-pill" href="/hampton-park/">Hampton Park</a>
+        <a class="area-pill" href="/endeavour-hills/">Endeavour Hills</a>
+        <a class="area-pill" href="/city-of-casey/">All City of Casey</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Soil test, then a real recommendation.</h2>
+        <p>We build both formats. We will tell you honestly which one suits your block.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="mailto:quotes@berwickpools.com.au">Email quotes@berwickpools.com.au</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

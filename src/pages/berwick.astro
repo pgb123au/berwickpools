@@ -1,0 +1,146 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can you build a pool on a steep Berwick block?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — and Berwick has a lot of them. The Eden Rise, The Mansions and the older 80s estates north of the hill are all sloping blocks. For sloped builds we either step a concrete pool into the slope with engineered retaining (more expensive, looks best) or set a fibreglass shell into a partially elevated paved deck (cheaper, often the smarter call). Slope adds $8K-$20K typically — retaining wall, extra fill or extra excavation. We assess the slope at the first visit and give you both options." }
+    },
+    {
+      "@type": "Question",
+      "name": "What soil class is a typical Berwick block?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Most Berwick blocks rate Class M (moderately reactive) under AS 2870. North of Clyde Road toward The Mansions you see more Class H1 (highly reactive) where the topsoil is shallower. Class M and H1 both need bored concrete piers under a concrete shell, with the piers driven 1.5-2.4m below the active layer. A geotech soil report (about $700) is standard practice on any concrete pool and we organise it as part of the engineering. Fibreglass shells need a properly screeded sand bed and subsoil drainage — same principle, simpler execution." }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a typical Berwick pool build take?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Berwick fibreglass: 8-12 weeks contract-to-swim. Berwick concrete: 16-22 weeks. The biggest variables on a Berwick build are permit timing through City of Casey (usually 4-6 weeks but can stretch to 8) and weather. Berwick gets 750mm annual rainfall — wet winter months (June-August) regularly shut excavation sites down for 3-7 days at a stretch. We schedule big digs for late summer / early autumn where we can." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the best position for a pool on a Berwick block?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Northern aspect — get the sun on the water for the longest part of the day. Most Berwick rear yards face north or north-east anyway. Keep the pool at least 2.5m off the boundary fence (BCA requires 1.5m but we leave space for the AS 1926 non-climbable zone plus paving width). Position the equipment slab in the side run between house and fence for noise control, and run the pipework to the pool in 80mm PVC sleeves so future upgrades are easy. Avoid the south-west corner — that's where the rain blows in worst." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do Berwick blocks usually have enough access for a fibreglass shell?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Mostly yes for newer estate blocks (Eden Rise, Berwick Springs, Berwick Waters) where side access is 1.0-1.2m and we can crane the shell in over the house. Older Berwick blocks south of Clyde Road sometimes have brick fences and pergolas that block crane access — we measure access at the site visit. If crane-in won't work, concrete is the answer; we shotcrete in place and access isn't an issue." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you build a pool in the Eden Rise or The Mansions estates?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — we work in both estates regularly. Eden Rise blocks are mostly 600-800m² with good crane access and Class M soil; usually a clean fibreglass install or a 7-8m concrete pool with paved surround. The Mansions has larger 1000m²+ acreage-feel blocks with established gardens; here we lean more concrete because owners want bespoke shapes that match the architecture. Both estates have estate-design covenants for surrounds — we work to those without complaint." }
+    }
+  ]
+};
+---
+<Layout
+  title="Pool Builders Berwick | Concrete & Fibreglass Pools | (03) 9003 0108"
+  description="Concrete and fibreglass pool builders in Berwick 3806 — Eden Rise, The Mansions, Berwick Springs, Berwick Waters. Reactive-clay piers, AS 1926 fence compliance, full City of Casey permit handling. Free on-site consultation."
+  canonical="https://berwickpools.com.au/berwick/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Berwick &middot; 3806 &middot; Eden Rise &middot; The Mansions</span>
+      <h1>Pool builders in <span class="accent">Berwick</span>.</h1>
+      <p class="hero-sub">
+        Berwick is our home town and roughly 40% of our annual builds. Established
+        suburb, mixed block sizes, mixed budgets &mdash; the older 80s estates south
+        of Clyde Road want concrete pools that match the architecture; the newer
+        Eden Rise and Berwick Waters estates lean fibreglass with paved surrounds.
+        We do both, and we know the City of Casey permit pathway by heart.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book a free consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why Berwick</span>
+      <h2>The Berwick pool story.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>Two Berwicks, two design conversations.</h3>
+        <p>
+          South of Clyde Road sits established Berwick proper &mdash; Federation
+          weatherboards, big-budget 80s renovations, mature gardens on 700&ndash;1,200m&sup2;
+          blocks. Pool design here is usually a <strong>custom concrete pool</strong>
+          with tiled coping and a built-in spa, sized to complement the house rather
+          than dominate the back yard. North of Clyde Road, Eden Rise, The Mansions
+          and Berwick Springs are newer estate blocks 500&ndash;900m&sup2; with
+          tighter side setbacks; here a <strong>fibreglass shell with a paved
+          travertine or porcelain surround</strong> is the popular pick &mdash; cost
+          control, faster build, and the design covenants accept it without fuss.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Class M reactive clay &mdash; engineered properly.</h3>
+        <p>
+          Berwick&rsquo;s soil profile is Newer Volcanic clay over older Silurian
+          mudstone &mdash; mostly Class M reactive, occasionally Class H1 around
+          The Mansions. The same ground movement that cracks the driveway cracks
+          cheap pool shells. Our concrete pools sit on <strong>bored concrete
+          piers 1.5&ndash;2.4m deep</strong>, reinforced with 600mm reo cages, with
+          a reinforced footing pad under the shell base. Fibreglass shells get a
+          250mm screeded crushed-rock sand bed with a 100mm subsoil ag-drain on
+          the downhill side, plumbed to a legal point of discharge.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Crane access &mdash; the make-or-break call.</h3>
+        <p>
+          For fibreglass we either run the shell down a side return (needs 1.0m
+          minimum clear width and an unbroken straight run) or crane it over the
+          house from the street. Eden Rise and Berwick Waters generally allow
+          both options; the older Berwick streets south of Clyde Road sometimes
+          have powerlines, pergolas or brick fences blocking the crane swing.
+          We do a free access check at the site visit before committing to a
+          shape and size.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Typical Berwick projects.</h3>
+        <ul>
+          <li>8m &times; 4m fibreglass shell + travertine surround + glass fence, Eden Rise ($55K&ndash;$70K)</li>
+          <li>9m &times; 4.5m custom concrete pool + integrated spa + tiled coping, established Berwick south ($75K&ndash;$100K)</li>
+          <li>10m lap pool concrete with wet edge, The Mansions acreage ($90K&ndash;$130K)</li>
+          <li>3.5m Plungie precast plunge pool in courtyard, Berwick Waters townhouse ($32K&ndash;$42K)</li>
+          <li>Renovation of 30-year-old pebblecrete pool: resurface, retile, new equipment ($18K&ndash;$28K)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Other Casey suburbs we cover.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/cranbourne/">Cranbourne</a>
+        <a class="area-pill" href="/narre-warren/">Narre Warren</a>
+        <a class="area-pill" href="/hampton-park/">Hampton Park</a>
+        <a class="area-pill" href="/endeavour-hills/">Endeavour Hills</a>
+        <a class="area-pill" href="/city-of-casey/">All City of Casey</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free Berwick pool consultation.</h2>
+        <p>Concrete vs fibreglass for your block. Honest assessment, no upsell.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

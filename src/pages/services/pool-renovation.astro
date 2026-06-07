@@ -1,0 +1,189 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Pool Renovation",
+  "serviceType": "Swimming pool resurface, retile, equipment upgrade and renovation",
+  "provider": {
+    "@type": "GeneralContractor",
+    "name": "Berwick Pools",
+    "telephone": "+61390030108"
+  },
+  "areaServed": [
+    { "@type": "AdministrativeArea", "name": "City of Casey" },
+    { "@type": "City", "name": "Berwick" },
+    { "@type": "City", "name": "Cranbourne" },
+    { "@type": "City", "name": "Narre Warren" },
+    { "@type": "City", "name": "Hampton Park" },
+    { "@type": "City", "name": "Endeavour Hills" }
+  ],
+  "description": "Full pool renovation for tired 80s and 90s Casey pools — resurface (pebble, quartz, tile), retile waterline, replace skimmer and main drain, swap to variable-speed pump and salt chlorinator. Adds 25-30 years of life to an existing pool at a fraction of the rebuild cost.",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "AUD",
+    "priceRange": "$8,000-$30,000",
+    "description": "From a basic resurface ($8K-$14K) up to a full top-to-bottom renovation with new equipment, fence and surround ($22K-$30K)."
+  }
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "When should an old pool be renovated rather than replaced?",
+      "acceptedAnswer": { "@type": "Answer", "text": "If the structural shell is sound — no major cracks, no foundation settlement, the concrete is intact — renovation is almost always cheaper and faster than demolition and rebuild. A full renovation (resurface, retile, replumb, re-equip) runs $18K-$28K versus $55K-$85K to demolish and build new. The exception is shell that's structurally compromised: large cracks, visible reo, foundation settlement showing as bulges or dips. That's a rebuild, not a renovation. We probe and pressure-test before quoting." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's involved in a pool resurface?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Six stages: (1) drain the pool and let it dry; (2) chip out and remove the old interior finish (pebblecrete, plaster, tile, paint) back to sound concrete; (3) probe-test the shell for cracks and water leaks; (4) repair any cracks with epoxy injection or shotcrete patches; (5) apply the new finish — pebble, quartz, full-tile or whatever the owner chose; (6) refill, balance chemistry, recommission equipment. Total elapsed time 2-4 weeks depending on weather and the chosen finish. The pool is out of action for the duration." }
+    },
+    {
+      "@type": "Question",
+      "name": "How long do the original 90s pebblecrete pools last?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The pebblecrete interior finish on a 1990-1995 pool typically lasts 20-30 years before it needs resurfacing — so most of them are now at or past end-of-life. Symptoms: hairline surface cracking, staining that won't acid-wash off, rough or chalky feel underfoot, persistent algae growth in the same spots. The shell underneath is usually fine — concrete shells from that era were built well. It's the interior finish that's the wear item, like roof tiles or carpet." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you upgrade the equipment as part of a renovation?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Almost always worth doing. A 1990s pool typically has a single-speed pump running at 1.5kW for 8 hours a day — about $1,200/year in electricity. Swap to a variable-speed pump (Astralpool, Pentair, Davey) running on low speed 18 hours a day and you'll cut electricity to about $300/year. The pump pays for itself in 18 months. Same logic on chlorinators — old single-cell models often run inefficiently and the cell needs replacement. A modern self-cleaning salt chlorinator pays back quickly. Bundle the equipment upgrade with the resurface and you save on labour and disruption." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does a renovated pool still need AS 1926 fence compliance?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — and this catches a lot of owners out. Any time you alter a pool (resurface, retile, change shape, change depth) the fence compliance needs to be re-certified to current AS 1926.1-2012 standards. The old fence might have been legal in 1995 but no longer complies today (different climbable-zone rules, gap measurements, gate-latch heights). About 30% of renovation jobs in Endeavour Hills need fence work too. We assess at quote and include it transparently." }
+    },
+    {
+      "@type": "Question",
+      "name": "What finishes can you put on a renovated pool?",
+      "acceptedAnswer": { "@type": "Answer", "text": "All the modern finishes work on a renovated concrete pool: glass-bead pebble (the current trend — luminous shimmer, $100-$160/m²), quartz finishes like PebbleSheen or StoneScapes ($120-$200/m²), or full tiled interior with porcelain or glass mosaic ($250-$500+/m²). A 1990s pebblecrete pool with a fresh quartz finish and new equipment looks indistinguishable from a brand-new build. Same shell, half the cost." }
+    }
+  ]
+};
+---
+<Layout
+  title="Pool Renovation Berwick | Resurface, Retile, Re-Equip | (03) 9003 0108"
+  description="Pool renovation for Berwick, Cranbourne, Narre Warren, Hampton Park, Endeavour Hills. Resurface, retile, replumb and re-equip tired 90s pools. Cheaper than rebuilding. $8K-$30K typical. AS 1926 fence re-certification included."
+  canonical="https://berwickpools.com.au/services/pool-renovation/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Save the existing pool, save $40K</span>
+      <h1>Pool renovation in <span class="accent">Berwick &amp; the City of Casey</span>.</h1>
+      <p class="hero-sub">
+        Resurface, retile, replumb and re-equip tired pools from the 1980s and
+        90s. Most original Casey pebblecrete pools are now at end-of-life on the
+        interior finish but the shell underneath is still good. A full renovation
+        runs $18K&ndash;$28K and gives the pool another 25&ndash;30 years
+        &mdash; about a third of what a tear-out-and-rebuild costs.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a free assessment</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Pool renovation &mdash; the detail.</h2>
+      <div style="max-width: 65rem;">
+        <h3>When renovation is the right call.</h3>
+        <ul>
+          <li>Concrete shell over 20 years old &mdash; usually 1980s or 1990s pebblecrete</li>
+          <li>Interior finish failing &mdash; cracking, staining, chalky underfoot, persistent algae</li>
+          <li>Equipment ageing &mdash; single-speed pump, old DE filter, failing salt cell</li>
+          <li>Shell <strong>structurally sound</strong> &mdash; no major cracks, no settlement</li>
+          <li>You like the size and shape of the existing pool</li>
+          <li>Budget is roughly $15K&ndash;$30K, not $60K+ for a new build</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">When renovation is NOT the right call.</h3>
+        <ul>
+          <li>Structural cracks in the shell &mdash; visible reo, water-loss tests fail, major settlement</li>
+          <li>Foundation movement showing as bulges, dips or twisted coping</li>
+          <li>Old fibreglass shell with osmotic blistering throughout (gelcoat failure)</li>
+          <li>Pool size or shape no longer suits the family &mdash; rebuild lets you start fresh</li>
+          <li>You want a wet edge, beach entry or feature wall the existing shell can&rsquo;t support</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">The renovation process.</h3>
+        <ol>
+          <li><strong>Free assessment:</strong> drain a small test area, probe-test the shell for cracks, pressure-test the plumbing, inspect equipment. Decision: renovate or rebuild. We give an honest answer.</li>
+          <li><strong>Drain &amp; chip:</strong> empty the pool, let it dry, chip out the old interior finish back to sound concrete substrate. 3&ndash;5 days.</li>
+          <li><strong>Shell repair:</strong> crack-injection with epoxy where needed, shotcrete patches on any spalled or damaged areas, re-key for the new finish.</li>
+          <li><strong>Replumb:</strong> replace skimmer box, main drain and return fittings as needed. Run new 50mm PVC if old pipework is failing.</li>
+          <li><strong>New interior finish:</strong> apply pebble, quartz or tile finish. 3&ndash;7 days depending on choice.</li>
+          <li><strong>Equipment swap:</strong> new variable-speed pump, cartridge filter, salt chlorinator. Wired and commissioned.</li>
+          <li><strong>Refill &amp; balance:</strong> 3&ndash;5 days to fill and chemically balance. Final commission.</li>
+          <li><strong>AS 1926 fence re-certification:</strong> fence compliance re-checked to current standards, certificate lodged with City of Casey.</li>
+        </ol>
+
+        <h3 style="margin-top: 2rem;">Finish options.</h3>
+        <ul>
+          <li><strong>Glass-bead pebble</strong> ($100&ndash;$160/m&sup2;) &mdash; current trend, luminous in sun</li>
+          <li><strong>Quartz</strong> (PebbleSheen, StoneScapes) ($120&ndash;$200/m&sup2;) &mdash; smooth, premium feel</li>
+          <li><strong>Modern pebblecrete</strong> ($80&ndash;$140/m&sup2;) &mdash; the budget-friendly classic, vastly improved over 90s pebble</li>
+          <li><strong>Full tiled interior</strong> ($250&ndash;$500+/m&sup2;) &mdash; the showroom finish, porcelain or glass mosaic</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Equipment upgrades that pay back fast.</h3>
+        <ul>
+          <li><strong>Single-speed to variable-speed pump:</strong> $1,500&ndash;$2,800 install, saves $700&ndash;$1,000/year in electricity. ~2-year payback.</li>
+          <li><strong>DE filter to cartridge filter:</strong> $1,200&ndash;$2,200 install, saves chemical hassle and DE handling. Lifestyle upgrade.</li>
+          <li><strong>Old salt chlorinator to self-cleaning model:</strong> $1,400&ndash;$2,500 install, longer cell life, lower maintenance.</li>
+          <li><strong>Add a heat pump:</strong> $4K&ndash;$6.5K install, extends swim season by 3&ndash;5 months in Casey climate. Quality of life upgrade.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Pricing brackets.</h3>
+        <p>
+          <strong>Basic resurface only</strong> ($8K&ndash;$14K) &mdash; chip out
+          old pebble, apply new pebble or quartz, refill. No equipment work, no
+          fence work, existing tile waterline stays.<br><br>
+          <strong>Mid renovation</strong> ($14K&ndash;$22K) &mdash; resurface +
+          new waterline tile + new equipment (VSD pump + chlorinator). The most
+          common spec.<br><br>
+          <strong>Full renovation</strong> ($22K&ndash;$30K) &mdash; everything
+          above + new skimmer + new main drain + new equipment slab + AS 1926
+          fence upgrade if needed. Brings a 30-year-old pool fully up to 2026
+          spec.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/berwick/">Berwick</a>
+        <a class="area-pill" href="/cranbourne/">Cranbourne</a>
+        <a class="area-pill" href="/narre-warren/">Narre Warren</a>
+        <a class="area-pill" href="/hampton-park/">Hampton Park</a>
+        <a class="area-pill" href="/endeavour-hills/">Endeavour Hills</a>
+        <a class="area-pill" href="/city-of-casey/">All City of Casey</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free pool renovation assessment.</h2>
+        <p>Honest renovate-vs-rebuild call. Fixed quote in 7 days.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Quote online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
