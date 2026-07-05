@@ -113,7 +113,9 @@ li { margin-bottom: 0.4rem; }
 
 /* ========== HERO ========== */
 .hero {
-  background: linear-gradient(135deg, var(--c-navy) 0%, var(--c-navy-dark) 100%);
+
+  background: linear-gradient(135deg, rgba(15,23,42,0.82) 0%, rgba(15,23,42,0.58) 100%), var(--c-navy, #0f172a) url('/images/hero.jpg') center / cover no-repeat;
+  background-size: cover;
   color: var(--c-white);
   padding: 3rem 0 4rem;
   position: relative;
@@ -521,3 +523,21 @@ li { margin-bottom: 0.4rem; }
 @media (max-width: 500px) {
   .brand img { height: 44px; }
 }
+
+/* ===== project-doctor 2026-06-13 — a11y baseline ===== */
+*:focus-visible {
+  outline: 2px solid #d97706;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+.mobile-phone {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+.nav-cta, .form-card button, button.primary {
+  min-height: 44px;
+}
+/* ===== end project-doctor ===== */
